@@ -1,37 +1,29 @@
-name: Deploy Nuxt 3 to GitHub Pages
 
+name: Deploy Nuxt 3 to GitHub Pages
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-
       - name: Install pnpm
         run: npm install -g pnpm
-
       - name: Install dependencies
         run: pnpm install
-
       - name: Build Nuxt 3 app
         run: pnpm build
-
       - name: Generate static files
         run: pnpm generate
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
