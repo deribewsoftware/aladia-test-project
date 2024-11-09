@@ -19,11 +19,13 @@
     <!-- Star Rating -->
     <div class="flex items-center mb-2">
       <div class="flex ">
-        <svg v-for="star in 5" :key="star" class="h-6 w-6 text-yellow-800" fill="#9a3412" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
+
+      <div class="h-4 w-full">  <NuxtRating  ratingSize="20px" activeColor="#a16207" class="text-yellow-700" :read-only="true" :ratingValue="4.3" /></div>
+       
 
 
       </div>
-      <p class="text-sm text-gray-500 ml-2">{{ review.timeAgo }}</p>
+      <p class="text-sm mt-1 text-gray-500 ml-2">{{ review.timeAgo }}</p>
     </div>
 
     <!-- Review Text -->
@@ -70,9 +72,9 @@ interface Review {
 // Sample review data
 const review = ref<Review>({
   avatar: '.public/avatar.jpg./', // Replace with an actual avatar image path
-  name: 'Ulv S.',
-  courses: 10,
-  reviews: 4,
+  name: 'Gaurav S.',
+  courses: 21,
+  reviews: 7,
   timeAgo: '4 years ago',
   comment:
     'It was so challenging and full of knowledge! I have learned a lot from this course. Colt is the best instructor, respect! He explains everything that way so you get it instantly. Unfortunately, at the end of the course a new instructor explained a bit in a different way where I did not most of the things, perhaps because of the advanced topics. Anyway, it was awesome to be a part of this course, thanks to each of you, especially Ian for helping students throughout the course.',

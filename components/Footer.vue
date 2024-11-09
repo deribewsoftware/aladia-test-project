@@ -1,6 +1,6 @@
 <template>
   <footer class="p-6 bg-gray-900 text-white">
-    <div class="py-5 border-b border-gray-800 flex justify-between">
+    <div class="py-5 border-b border-gray-800 gap-10 flex flex-col md:flex-row justify-between">
       <p class="text-lg font-medium">Top companies choose <span class=" text-violet-300">Udemy Business</span> to build in-demand career skills.</p>
 
       <div class="flex items-center justify-between space-x-6">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="p-5  grid grid-cols-1 lg:grid-cols-12 w-full">
-      <div class="flex  w-full col-span-8 justify-between gap-10">
+      <div class="flex flex-col md:flex-row  w-full md:col-span-8  items-center justify-between gap-10">
         <ul>
           <li class=" hover:underline">Udemy Business</li>
           <li class=" hover:underline">Teach on Udemy</li>

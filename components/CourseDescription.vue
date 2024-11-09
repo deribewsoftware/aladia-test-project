@@ -1,79 +1,150 @@
 <template>
   <div class="p-6">
-    <!-- Title -->
-    <h2 class="text-2xl font-bold mb-4">Requirements</h2>
-
-    <!-- Requirements List -->
-    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
-      <li>Have a computer with Internet</li>
-      <li>Be ready to learn an insane amount of awesome stuff</li>
-      <li>Prepare to build real web apps!</li>
-      <li>Brace yourself for stupid jokes about my dog Rusty</li>
-    </ul>
+   
+    <!-- Requirements Section -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold mb-2">Requirements</h2>
+      <ul class="list-disc pl-5">
+        <li>Software or Information Technology or Infrastructure understanding</li>
+      </ul>
+    </div>
 
     <!-- Description Section -->
-    <h2 class="text-2xl font-bold mb-4">Description</h2>
-    
-    <!-- Short Description -->
-    <p class="text-gray-700 mb-4">
-      <strong>Now with over 10 hours of React content. Just updated on May 15th, 2023.</strong>
-    </p>
-    
-    <!-- Long Description (Toggled) -->
-    <p class="text-gray-700 mb-4" :class="{ 'line-clamp-4': !showMore }">
-      Massive new React "expansion pack" covers: React basics, JSX, props, state, Vite, MaterialUI, hooks, useEffect, React design patterns, and more.
-      Hi! Welcome to the brand new version of The Web Developer Bootcamp, Udemy's most popular web development course. This course was just completely
-      overhauled to prepare students for the 2023 job market, with over 60 hours of brand new content. This is the only course you need to learn web
-      development. There are a lot of options for online developer training, but this course is without a doubt the most comprehensive and effective
-      on the market. Here's why:
-      
-      <br />
-      <strong>This is the only Udemy course taught by a professional bootcamp instructor with a track record of success.</strong>
-      92% of my in-person bootcamp students go on to get full-time developer jobs. Most of them are complete beginners when I start working with them.
-      The previous 2 bootcamp programs that I taught cost $14,000 and $21,000. This course is just as comprehensive but with brand new content for a fraction
-      of the price. Everything I cover is up-to-date and relevant to 2022's developer job market. This course does not cut any corners. I just spent 8 months
-      redoing this behemoth of a course!
-      <span v-if="showMore">
-        We build 13+ projects, including a gigantic production application called YelpCamp. No other course walks you through the creation of such a substantial application.
-        <br /><br />
-        <strong>Technologies Covered:</strong>
-        <ul class="list-disc list-inside mt-2">
-          <li>HTML5, CSS3, Flexbox, Responsive Design</li>
-          <li>JavaScript (all 2022 modern syntax, ES6, ES2018, etc.)</li>
-          <li>AJAX, ReactJS, NodeJS, MongoDB, and much more!</li>
-        </ul>
-        <br />
-        When you're learning to program you often have to sacrifice learning the exciting and current technologies in favor of the "beginner friendly" classes.
-        With this course, you get the best of both worlds. This is a course designed for the complete beginner, yet it covers some of the most exciting and relevant topics in the industry.
-        
-        <h3 class="text-xl font-bold mt-6">Course Includes:</h3>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Lectures</li>
-          <li>Code-Alongs</li>
-          <li>Projects</li>
-          <li>Exercises</li>
-          <li>Research Assignments</li>
-          <li>Slides</li>
-          <li>Downloads</li>
-          <li>Readings</li>
-          <li>Too many pictures of my dog Rusty</li>
-        </ul>
-        
-        <p class="mt-4">
-          If you have any questions, please don't hesitate to contact me. I got into this industry because I love working with people and helping students learn. Sign up today and see how fun, exciting, and rewarding web development can be!
-        </p>
+    <div class="mb-8 tracking-tight">
+      <h2 class="text-2xl font-bold mb-4">
+       Description
+      </h2>
+      <p class="mb-5 font-semibold text-black"> Welcome to the Course on Professional Cloud Architect by Google Cloud</p>
+      <p class="mb-1 font-semibold text-black">More than 30280+ Students responded they have passed certifications because of this course!</p>
+     
+      <p class="text-gray-800 my-2">
+        Successful <strong>407,000+ Subscriptions</strong> and <strong>305,000+ </strong>  Unique Students <strong>only for Google Cloud Platform Certification Courses.</strong>
+      </p>
 
-        
-    <!-- Who this course is for -->
-    <h3 class="text-2xl font-bold mt-8">Who this course is for:</h3>
-    <ul class="list-disc list-inside space-y-2 mt-2 text-gray-700">
-      <li>This course is for anyone who wants to learn about web development, regardless of previous experience</li>
-      <li>It's perfect for complete beginners with zero experience</li>
-      <li>It's also great for anyone who does have some experience in a few of the technologies (like HTML and CSS) but not all</li>
-      <li>If you want to take ONE COURSE to learn everything you need to know about web development, take this course</li>
-    </ul>
-      </span>
-    </p>
+
+      <div v-if="showMore" class=" text-base w-full">
+      <h3 class="text-sm text-black font-bold mt-4">Course Updated - May 2024</h3>
+      <ul class="list-decimal  pl-5">
+        <li>Updates services that have changed</li>
+        <li>New theme and Animation for critical services</li>
+      </ul>
+      <p class=" font-medium py-4">
+        We will continue to update with a new design for all our lectures. Stay Tuned.
+      </p>
+
+      <div class="mt-4  pb-10 space-y-3">
+<p class=" font-medium">
+  Here is some recent feedback after passing the exam.  </p>
+<p>
+  "Passed Google Cloud Architect Exam - Thank you Dhanaji for your course!" ·Ramu a day ago</p>
+
+<p class=" italic">"Yesterday i passed the exam, its not that hard if you understand concepts good and did some work/lab in GCP. The material and the architect course is so helpful.."</p>
+
+
+<p class=" italic">
+  I have cleared my GCP Cloud Architect exam and would like to thank you for the detailed course, which was good to get subject knowledge.</p>
+
+<p class=" italic">Thanks and Regards,</p>
+
+<div class="mt-10">
+
+ <p> Major Updates for this Courses! </p>
+ <ul class=" font-semibold space-y-1  italic list-decimal">
+  <li class="mt-2"> Updates: Added 300 Practice Questions have already been added... I am still working on the additional questions for some questions </li>
+  <li>
+    Updates: Added Code Samples for demos.</li>
+    <li>Updates:  Added More demos got Google Cloud Platform Services - VPC, Sub-networks, VPN, Bastion Host etc</li>
+    <li class=" font-normal">Updates: Added 4 Case studies which appear in the exam 
+    </li>
+    <li></li>
+    <li></li>
+
+ </ul>
+
+
+ 
+
+
+
+
+
+
+
+</div>
+<div class="py-2 w-full space-y-2">
+  
+<p class=" italic font-semibold">Google is developer-friendly and has provided almost all code examples to GitHub  link ->  GitHub Slash GoogleCloudPlatform/</p>
+<p class=" italic font-semibold">Google provides $300 credit to try/learn the GCP platform besides the free tier, so you can even learn paid services that do not have a free tier. </p>
+</div>
+
+
+ <!-- GCP Highlights Section -->
+ <div class="mt-8">
+      <h3 class=" italic font-semibold mb-4">GCP Highlights</h3>
+      <ul class="list-disc text-sm space-y-2 text-gray-800 pl-5">
+        <li>Google Cloud Platform - GCP is the fastest-growing public Cloud Platform Service in the world.</li>
+        <li>Last year Google recorded a 65% growth rate for Cloud Business.</li>
+        <li>Google has committed many more data centers, points of presence, or edge locations worldwide in 2023.</li>
+        <li>
+          GCP is prominent in Data Analytics and Machine Learning, with services in Storage, Compute, Database, Security, and many more cloud solutions.
+        </li>
+      </ul>
+    </div>
+    <div class="mt-8 w-full italic font-semibold">
+      <h3>Certifications Content </h3>
+      <ul class=" space-y-2 pl-5 list-disc">
+        <li class="mt-2">Design and plan a cloud solution architecture</li>
+        <li>Manage and provision the cloud solution infrastructure</li>
+        <li>Design for security and compliance</li>
+        <li>Analyze and optimize technical and business processes</li>
+        <li>Manage implementations of cloud architecture</li>
+        <li>Ensure solution and operations reliability</li>
+      </ul>
+    </div>
+
+
+    <div class="mt-8">
+      <h3 class="font-semibold">GCP Agenda</h3>
+      <ul class=" pl-5  text-sm  tracking-wide italic list-disc space-y-2">
+        <li> Compute, Storage & Database, Networking, Autoscaling/HA – Core Platform and Infrastructure Services –<strong> In-Depth</strong></li>
+
+<li>IAM and Security, Management - Logging and Monitoring, Developer and Management Tools  - Supporting Services   - <strong>In-Depth</strong></li>
+
+
+<li>BigData, Machine Learning, IoT  - <strong> Other GCP  Services</strong> </li>
+      </ul>
+    </div>
+
+    <div class=" space-y-2 text-sm tracking-wide text-gray-800">
+      <p>Happy Learning</p>
+      <p>GCP Gurus,</p>
+      <p>Seattle.</p>
+    </div>
+      </div>
+   
+
+    <!-- Who This Course is For Section -->
+    <div class="pb-8">
+      <h3 class="text-2xl font-bold mb-4">Who this course is for:</h3>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>Anyone wanting to enhance skills with Cloud Architecture Certifications</li>
+        <li>Anyone wanting to gain an understanding of Google Cloud Platform - GCP</li>
+        <li>Anyone preparing for the Cloud Architect Exam from Google</li>
+        <li>Anyone wanting to understand Public Cloud, Private Cloud, or Hybrid Cloud Deployment</li>
+        <li>Anyone looking to understand the services offered by Google Cloud Platform</li>
+        <li>Customers of Google Cloud Platform who want a deeper understanding of its services</li>
+        <li>Current customers of Amazon, Azure, or other public clouds who want to learn about GCP services</li>
+        <li>AWS Solution Architects or Microsoft Azure Architects who want to understand Google Cloud Platform</li>
+        <li>Developers, Lead Developers, and other tech professionals using Google Cloud Platform or other public cloud services</li>
+      </ul>
+    </div>
+
+  
+    
+
+   
+  </div>
+</div>
     
     <!-- Show More / Show Less Button -->
      <!-- Show More/Less Button -->

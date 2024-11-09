@@ -1,32 +1,13 @@
 // composables/useLearningTopics.ts
 export const useLearningTopics = () => {
   const topics = [
-    "The ins and outs of HTML5, CSS3, and Modern JavaScript for 2021",
-    "Create responsive, accessible, and beautiful layouts",
-    "Continue to learn and grow as a developer, long after the course ends",
-    "Create a complicated yelp-like application from scratch",
-    "Create static HTML and CSS portfolio sites and landing pages",
-    "Create complex HTML forms with validations",
-    "Use CSS Frameworks including Bootstrap 5, Semantic UI, and Bulma",
-    "Use JavaScript variables, conditionals, loops, functions, arrays, and objects",
-    "Master the 'weird' parts of JavaScript",
-    "Manipulate the DOM with vanilla JS",
-    "Use Postman to monitor and test APIs",
-    "Write complex web apps with multiple models and data associations",
-    "Use Express and MongoDB to create full-stack JS applications",
-    "Make REAL web applications using cutting-edge technologies",
-    "Recognize and prevent common security exploits like SQL-Injection & XSS",
-    "Create a blog application from scratch using Node, Express, and MongoDB",
-    "Deploy your applications and work with cloud databases",
-    "Think like a developer. Become an expert at Googling code questions!",
-    "Implement full authentication from scratch!",
-    "Implement responsive navbars on websites",
-    "Write Javascript functions, and understand scope and higher order functions",
-    "Create full-stack web applications from scratch",
-    "Write JavaScript based browser games",
-    "Use NodeJS to write server-side JavaScript",
-    "Write a REAL application using everything in the course",
-    "Use common JS data structures like Arrays and Objects"
+    "In-depth Understanding of Google Cloud Platform",
+    "GCP Compute Service: Virtual Machine (GCE), App Engine (GAE), Container Service (GKE), Google Cloud Function",
+    "GCP Management Tools: Stackdriver Monitoring, Logging, Trace, Error Reporting, Deployment Manager, Shell, Console, Cloud SDK",
+    "GCP IAM and Security: Cloud IAM, KMS, Resource Manager, Security Scanner",
+    "GCP Services - Networking, Storage, Databases, Containers, Virtual Machines, App Engine, Security, etc.",
+    "GCP Networking: VPC, CDN, Interconnect, DNS",
+    "GCP Storage & Database Service: Cloud Storage, Cloud SQL, Cloud BigQuery, Cloud Spanner, Cloud DataStore"
   ];
 
   return { topics };

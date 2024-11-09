@@ -25,9 +25,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
-  // Optional: Build options
-  build: {
-    // You can add custom build options here if necessary
-  }
+  modules: ["nuxt-rating"],
+  
 })

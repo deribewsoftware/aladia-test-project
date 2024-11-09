@@ -1,11 +1,11 @@
 <template>
   <div class=" space-y-5">
-    <h1 class="text-3xl font-bold text-black mt-10">Course content</h1>
+    <h1 class="text-2xl font-bold text-black ">Course content</h1>
     <div class="flex  text-sm text-gray-800 items-center justify-between">
       <div class="flex gap-2">
-        <span>75 sections </span>
-        <span>• 731 lectures</span>
-        <span> • 74h 13m total length</span>
+        <span>14 sections </span>
+        <span>• 254 lectures</span>
+        <span> • 29h 42m total length</span>
       </div>
       <p class=" font-bold text-violet-800 hover:text-violet-900">Expand all sections</p>
     </div>
@@ -48,7 +48,7 @@
     </UiAccordion>
   </div>
   <div class="w-full border border-black hover:bg-black/20 p-3 flex justify-center items-center">
-    <span class="font-medium">65 more sections</span>
+    <span class="font-medium">4 more sections</span>
   </div>
   </div>
 </template>

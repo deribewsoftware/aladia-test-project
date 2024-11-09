@@ -1,14 +1,22 @@
 <template>
   <div class="w-full px-6 gap-6 flex justify-evenly h-16 items-center">
+    <button class=" lg:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+    </button>
 
     <!-- udemy Logo -->
       <UiLogo/>
 
       <!-- Category -->
-       <Category/>
+      <div class="hidden md:block">
+        <Category/>
+      </div>
 
        <!-- Searchbar -->
-        <div class=" flex-grow">
+        <div class=" flex-grow hidden lg:block">
           <UiSearchbar/>
         </div>
         
@@ -16,7 +24,8 @@
        
 
         <!-- Udemy Business -->
-        <UiDropdown   >
+        <div class=" hidden lg:block">
+          <UiDropdown   >
           <template #trigger>
        <span>Udemy Business</span>
           </template>
@@ -29,11 +38,13 @@
         </div>
       </template>
     </UiDropdown>
+        </div>
 
 
          <!-- Tech on Udemy -->
           
-         <UiDropdown   >
+         <div class="hidden lg:block">
+          <UiDropdown   >
           <template #trigger>
        <span>Tech on Udemy</span>
           </template>
@@ -46,6 +57,7 @@
         </div>
       </template>
     </UiDropdown>
+         </div>
 
 
 
@@ -72,12 +84,12 @@
 
 
     <!-- Log in -->
-     <button class="border border-black py-2 px-4 flex items-center hover:bg-gray-400/20 ">
+     <button class="border hidden lg:block border-black py-2 px-4 flex items-center hover:bg-gray-400/20 ">
       <span class=" font-medium">Log in</span>
      </button>
 
     <!-- Signup -->
-    <button class="border border-black py-2 px-4 flex text-white items-center bg-black hover:bg-gray-900/70 ">
+    <button class="border hidden lg:block border-black py-2 px-4 flex text-white items-center bg-black hover:bg-gray-900/70 ">
       <span class=" font-medium">Sign up</span>
      </button>
 

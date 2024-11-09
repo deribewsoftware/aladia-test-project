@@ -1,27 +1,71 @@
 <template>
-  <div class=" bg-black  w-full text-white ">
-    <div v-if="scrolling" class="h-16 p-2 bg-black fixed top-0 w-full ">
-      <h1 class="text-lg font-semibold">The Web Developer Bootcamp 2024</h1>
+  <div class="">
+    <div class="flex justify-center  lg:hidden py-3 items-center w-full text-purple-700 gap-2">
+        <span class=" font-bold">IT & Software</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill=" #7e22ce" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4 text-white">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+
+        <span class=" font-bold">IT Certifications</span>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill=" #7e22ce" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4 text-white">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+
+        <span class=" font-bold"> Google Cloud</span>
+      </div>
+      
+  <div class=" hidden lg:block bg-black  w-full text-white ">
+    <div v-if="scrolling" class="h-16 p-2 z-10 bg-black fixed top-0 w-full ">
+      <h1 class="text-lg font-semibold">Ultimate Google Certified Professional Cloud Architect 2024</h1>
       <div class="flex items-center gap-1">
-        <span class=" font-medium text-yellow-600">4.7</span>
-        <svg v-for="star in 5" :key="star" class="h-4 w-4 text-yellow-600" fill="#ca8a04" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
-        <span class="text-blue-200">(276,801 ratings)</span><span>924,058 students</span>
+        <span class=" font-medium text-yellow-700">4.3</span>
+        
+        <NuxtRating  inactiveColor="#1f2937"  activeColor="#a16207" class="text-yellow-700" :read-only="true" :ratingValue="4.3" />
+        <span class="text-blue-200">(5,121 ratings)</span><span>69,966 students</span>
       </div>
     </div>
-    <div v-if="!scrolling" class="space-y-5 p-10 container max-w-4xl pl-40">
-      <h1 class="text-3xl font-bold">The Web Developer Bootcamp 2024</h1>
-      <p class="text-lg font-semibold">10 Hours of React just added. Become a Developer With ONE course - HTML, CSS, JavaScript, React, Node, MongoDB and More!</p>
 
-      <div class="flex items-center gap-1">
-        <span class=" font-medium text-yellow-600">4.7</span>
-        <svg v-for="star in 5" :key="star" class="h-4 w-4 text-yellow-600" fill="#ca8a04" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>star</title> <path d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path> </g></svg>
-        <span class="text-blue-200">(276,801 ratings)</span><span>924,058 students</span>
+
+    <div v-if="!scrolling" class="space-y-5 p-10 container max-w-full lg:max-w-2xl  xl:max-w-3xl 2xl:max-w-4xl lg:pl-10 xl:pl-30 2xl:pl-40">
+      
+      <div class="flex py-3 items-center w-full tracking-tight gap-2">
+        <span class="text-blue-200 font-bold">IT & Software</span>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4 text-white">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+
+        <span class="text-blue-200 font-bold">IT Certifications</span>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4 text-white">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+
+        <span class="text-blue-200 font-bold"> Google Cloud</span>
       </div>
 
-      <p>Created by <span class="text-blue-200 underline">Colt Steele</span></p>
+      <h1 class="text-3xl font-bold">Ultimate Google Certified Professional Cloud Architect 2024</h1>
+      <p class="text-lg font-semibold">449,000 Subscriptions-In depth coverage of all Services-300+ Practice questions Including 3 case Studies Analysis Design</p>
+
+      <div class="flex items-center  gap-1">
+        <span class=" font-medium text-yellow-700">4.3</span>
+        
+        <NuxtRating inactiveColor="#1f2937" activeColor="#a16207" class="text-yellow-700" :read-only="true" :ratingValue="4.3" />
+        <span class="text-blue-200">(5,121 ratings)</span><span>69,966 students</span>
+      </div>
+
+      <p>Created by <span class="text-blue-200 underline">Google Cloud Experts Cloud Architect,Google Cloud Platform Gurus!</span></p>
 
       <div class="flex gap-3">
-        <span>Last updated 10/2024
+        <span class="flex items-center gap-1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+</svg>
+
+<span> Last updated 10/2024</span>
 </span>
 
 <span class=" flex gap-2">
@@ -32,8 +76,12 @@
 <span>English</span>
   </span>
 
-  <span>
-    English [Auto],
+  <span class="flex gap-1">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-7" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M19 2H9a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zm1 17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14zM12 7h4a1 1 0 1 0 0-2h-4a1 1 0 1 0 0 2zm-1 5h6a1 1 0 1 0 0-2h-6a1 1 0 1 0 0 2zm0 4h6a1 1 0 1 0 0-2h-6a1 1 0 1 0 0 2z"/>
+</svg>
+
+  <span>  English [Auto],</span>
   </span>
 
   <span>
@@ -47,7 +95,7 @@
 
       </div>
     </div>
-    
+  </div>
   </div>
 </template>
 

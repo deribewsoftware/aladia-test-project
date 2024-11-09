@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Trigger Button Slot -->
-    <button @click="openModal">
+    <button @click="openModal" class="w-full ">
       <slot name="trigger"></slot>
     </button>
 

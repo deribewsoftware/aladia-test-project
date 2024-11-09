@@ -17,12 +17,18 @@ importers:
       nuxt:
         specifier: ^3.14.159
         version: 3.14.159(@parcel/watcher@2.5.0)(@types/node@22.9.0)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.24.4)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.10(@types/node@22.9.0)(terser@5.36.0))
+      nuxt-rating:
+        specifier: ^0.1.5
+        version: 0.1.5(magicast@0.3.5)(rollup@4.24.4)
       vue:
         specifier: latest
         version: 3.5.12(typescript@5.6.3)
       vue-router:
         specifier: latest
         version: 4.4.5(vue@3.5.12(typescript@5.6.3))
+      vue3-star-ratings:
+        specifier: ^3.0.5
+        version: 3.0.5(typescript@5.6.3)
     devDependencies:
       autoprefixer:
         specifier: ^10.4.20
@@ -2175,6 +2181,9 @@ packages:
   nuxt-headlessui@1.2.0:
     resolution: {integrity: sha512-eidWwA4SFLWFk2KcGMHlrPTJb+ODEt5Bsj6cXjmhDtRYydqvgYXHU1U7563E6/qMuayThumbGUopF1IRqlYHwA==}
 
+  nuxt-rating@0.1.5:
+    resolution: {integrity: sha512-43vdn5RqPt6BXHuEYnRWWFDP17PGAFBubTwCCaCxPn92u0kLC22l5UpkDyH5Pqlsey9COFDYLXzbAb/+7axiuA==}
+
   nuxt@3.14.159:
     resolution: {integrity: sha512-1xz6AfFkun+byUIkBNX3/CTOTShPRFJe0y9HqWZX2aV9xdoz5ByeaHZfktokhOOSbvabjDyzkTbbHh3V673qHw==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -3122,6 +3131,9 @@ packages:
     resolution: {integrity: sha512-4fKZygS8cH1yCyuabAXGUAsyi1b2/o/OKgu/RUb+znIYOxPRxdkytJEx+0wGcpBE1pX6vUgh5jwWOKRGvuA/7Q==}
     peerDependencies:
       vue: ^3.2.0
+
+  vue3-star-ratings@3.0.5:
+    resolution: {integrity: sha512-V5k/T/7JoEq1VxhtJr1bVdDT181PqbSYMqhyj4myuMFBYXZ2f7bzAcmwFGEkoMmcIg3IVEhroBPUVtPQ4anQDQ==}
 
   vue@3.5.12:
     resolution: {integrity: sha512-CLVZtXtn2ItBIi/zHZ0Sg1Xkb7+PU32bJJ8Bmy7ts3jxXTcbfsEfBivFYYWz1Hur+lalqGAh65Coin0r+HRUfg==}
@@ -5526,6 +5538,16 @@ snapshots:
       - vue
       - webpack-sources
 
+  nuxt-rating@0.1.5(magicast@0.3.5)(rollup@4.24.4):
+    dependencies:
+      '@nuxt/kit': 3.14.159(magicast@0.3.5)(rollup@4.24.4)
+      typescript: 5.6.3
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+      - webpack-sources
+
   nuxt@3.14.159(@parcel/watcher@2.5.0)(@types/node@22.9.0)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.24.4)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.10(@types/node@22.9.0)(terser@5.36.0)):
     dependencies:
       '@nuxt/devalue': 2.0.2
@@ -6607,6 +6629,12 @@ snapshots:
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.12(typescript@5.6.3)
+
+  vue3-star-ratings@3.0.5(typescript@5.6.3):
+    dependencies:
+      vue: 3.5.12(typescript@5.6.3)
+    transitivePeerDependencies:
+      - typescript
 
   vue@3.5.12(typescript@5.6.3):
     dependencies:

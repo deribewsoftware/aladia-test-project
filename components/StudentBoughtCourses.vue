@@ -5,15 +5,15 @@
       <div
         v-for="(course, index) in courses"
         :key="index"
-        class="flex items-start bg-white border-b pb-4 last:border-none"
+        class="md:flex items-start bg-white border-b pb-4 last:border-none"
       >
         <!-- Course Image -->
-       <div class="w-20 h-20 ">
-        <img src="../public/courseOne.png" alt="Course image" class="rounded-lg h-full w-full object-fit mr-4" />
+       <div class="w-full md:w-20 h-40 mb-5 md:mb-0 md:h-20 ">
+        <img :src="course.image" alt="Course image" class=" h-full w-full object-fit mr-4" />
        </div>
 
         <!-- Course Info -->
-        <div class=" ml-4 flex-grow">
+        <div class=" md:ml-4 flex-grow">
           <div class="flex  w-full justify-between ">
             <h3 class="font-bold text-gray-900">{{ course.title }}</h3>
           <div class="flex gap-2 ">
@@ -22,7 +22,7 @@
            
           </div>
 
-          <div class="flex gap-2">
+          <div class="md:flex gap-2">
             <svg
   xmlns="http://www.w3.org/2000/svg"
   width="24"
@@ -43,7 +43,7 @@
           <p class="text-sm line-through text-gray-500">{{ course.oldPrice }}</p>
          
         </div>
-        <button class="flex w-10 p-2 h-10 justify-center border-black border hover:bg-black/20 rounded-full items-center hover:text-gray-700">
+        <button class="flex hidden md:block w-10 p-2 h-10 justify-center border-black border hover:bg-black/20 rounded-full items-center hover:text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-6 w-6 size-3">
   <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
 </svg>
@@ -52,7 +52,7 @@
           </div>
           <div class="">
           
-          <div class="flex items-center space-x-2 text-sm text-gray-500 mt-1">
+          <div class="md:flex items-center space-x-2 text-sm text-gray-500 mt-1">
             <span v-if="course.tag" :class="['px-2 font-medium py-0.5  ',course.tag==='Bestseller'?'bg-yellow-300 text-yellow-900':'',course.tag==='Hot & New'?'bg-pink-300 text-pink-900':'' ]">{{ course.tag }}</span>
             <span class=" font-medium text-teal-800">{{ course.hours }}</span>
             <span> <span class="text-teal-800">•</span> Updated {{ course.updated }}</span>

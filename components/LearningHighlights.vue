@@ -3,24 +3,27 @@
     <h1 class="text-3xl font-semibold mb-6">What you'll learn</h1>
     
     <!-- Topics List with Dynamic Show/Hide -->
-    <div class="grid grid-cols-1 md:grid-cols-2 relative gap-1 text-sm">
+    <div class="grid grid-cols-1 space-x-4 space-y-4 md:grid-cols-2 relative gap-1 text-sm">
       <transition-group name="fade" tag="div" v-for="(topic, index) in displayedTopics"
       :key="index">
         <div
           
-          class="flex items-start space-x-3"
+          class=" grid grid-cols-12  items-start space-x-3"
         >
+         <div class="  col-span-1 h-4 w-4">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 text-gray-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
-          <p class="text-gray-700">{{ topic }}</p>
+         
+         xmlns="http://www.w3.org/2000/svg"
+         class=" text-gray-600"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor"
+         stroke-width="2"
+       >
+         <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+       </svg>
+         </div>
+          <p class="text-gray-700 col-span-11">{{ topic }}</p>
           <div v-if="!showMore" class="h-20 w-full bottom-0 opacity-10  absolute"></div>
         </div>
       </transition-group>

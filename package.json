@@ -13,8 +13,10 @@
     "@types/vue": "^2.0.0",
     "D": "^1.0.0",
     "nuxt": "^3.14.159",
+    "nuxt-rating": "^0.1.5",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue3-star-ratings": "^3.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
