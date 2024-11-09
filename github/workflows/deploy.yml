@@ -3,7 +3,7 @@ name: Deploy Nuxt 3 to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Trigger deployment on push to the main branch
 
 jobs:
   deploy:
@@ -13,17 +13,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install pnpm
+      - name: Set up pnpm
         run: npm install -g pnpm
 
       - name: Install dependencies
         run: pnpm install
 
       - name: Generate static site
-        run: pnpm run generate
+        run: pnpm run generate  # Generate static files in the 'dist' folder
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+          publish_dir: ./dist  # Path to the generated static files (dist)
