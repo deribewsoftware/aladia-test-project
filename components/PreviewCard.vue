@@ -1,7 +1,7 @@
 <template>
   <!-- Main Wrapper (absolute positioning for the modal) -->
   <div 
-  :class="scrolling ? 'lg:fixed lg:top-3' : 'lg:absolute top-10'"
+  :class="scrolling ? 'lg:fixed lg:top-3' : 'lg:absolute top-3'"
   class="  bg-white m-4 lg:z-20 border-0.5 border-white p-[1px] w-full lg:shadow-lg lg:w-[350px] lg:right-10 xl:right-20 2xl:right-40">
     <div v-if="!scrolling " class="w-full">
       <!-- Modal component -->

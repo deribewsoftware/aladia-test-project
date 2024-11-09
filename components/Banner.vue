@@ -29,7 +29,7 @@
     </div>
 
 
-    <div v-if="!scrolling" class="space-y-5 p-10 container max-w-full lg:max-w-2xl  xl:max-w-3xl 2xl:max-w-4xl lg:pl-10 xl:pl-30 2xl:pl-40">
+    <div v-if="!scrolling" class="space-y-5 p-5 container max-w-full lg:max-w-2xl  xl:max-w-3xl 2xl:max-w-4xl lg:pl-10 xl:pl-30 2xl:pl-40">
       
       <div class="flex py-3 items-center w-full tracking-tight gap-2">
         <span class="text-blue-200 font-bold">IT & Software</span>
