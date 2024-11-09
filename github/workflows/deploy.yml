@@ -32,7 +32,7 @@ jobs:
         run: pnpm build
 
       - name: Generate static files
-        run: pnpm nuxi generate
+        run: pnpm run generate
 
       - name: Check git status
         run: git status
@@ -46,7 +46,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: .output/public
           publish_branch: gh-pages
           force_orphan: true  # Forces a new history for gh-pages
           allow_empty_commit: true
