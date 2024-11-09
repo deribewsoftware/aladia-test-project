@@ -32,9 +32,14 @@ jobs:
       - name: Generate static files
         run: pnpm generate
 
+      - name: Configure Git for GitHub Pages deployment
+        run: |
+          git config --global user.name "deribew"
+          git config --global user.email "deribewsoftware@gmail.com"
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4  # Updated to v4 for compatibility with Node 20
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: .output/public 
           publish_branch: gh-pages
