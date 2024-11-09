@@ -1,10 +1,12 @@
 export default defineNuxtConfig({
   // Set the deployment target to static
+  ssr: false,
   target: 'static', 
 
   // Configure static site generation
-  generate: {
-    dir: 'dist',  // Output directory for static files
+  generate:{
+    nojekyll: true, //not working on this version
+    fallback: '404.html',
   },
 
   app: {

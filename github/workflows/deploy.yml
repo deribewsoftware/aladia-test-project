@@ -2,28 +2,39 @@ name: Deploy Nuxt 3 to GitHub Pages
 
 on:
   push:
-    branches:
-      - main  # Trigger deployment on push to the main branch
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Set up pnpm
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install pnpm
         run: npm install -g pnpm
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Generate static site
-        run: pnpm run generate  # Generates static files
+      - name: Build Nuxt 3 app
+        run: pnpm build
+
+      - name: Generate static files
+        run: pnpm generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
-          publish_dir: .output/public  # Correct output directory for GitHub Pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .output/public
+          publish_branch: gh-pages
