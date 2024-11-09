@@ -20,10 +20,10 @@ jobs:
         run: pnpm install
 
       - name: Generate static site
-        run: pnpm run generate  # Generate static files in the 'dist' folder
+        run: pnpm run generate  # Generates static files
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
-          publish_dir: ./dist  # Path to the generated static files (dist)
+          publish_dir: .output/public  # Correct output directory for GitHub Pages
