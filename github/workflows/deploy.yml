@@ -32,7 +32,7 @@ jobs:
         run: pnpm build
 
       - name: Generate static files
-        run: pnpm run generate
+        run: pnpx nuxi generate
 
       - name: Check git status
         run: git status
