@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/aladia-test-project/', // Set the base URL for the GitHub Pages repository
+    baseURL: '/', // Set the base URL for the GitHub Pages repository
   },
 
   // Global CSS and PostCSS configuration
