@@ -11,8 +11,6 @@
        <div class=" h-full">
         <img src="../public/thumbnail.png" alt="" class="w-full w-full">
        </div>
-      
-      
       </template>
 
       <!-- Modal Content -->

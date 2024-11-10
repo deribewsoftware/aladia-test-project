@@ -146,7 +146,7 @@
   </div>
 </div>
     
-    <!-- Show More / Show Less Button -->
+ 
      <!-- Show More/Less Button -->
     <button class="mt-4 text-violet-700 hover:text-violet-800 font-semibold hover:underline focus:outline-none" @click="toggleShowMore">
       <div v-if="showMore" class="flex items-center gap-2">
